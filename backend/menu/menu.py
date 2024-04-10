@@ -9,44 +9,54 @@ from django.shortcuts import render
 
 class Link(TypedDict):
     name: str
+    to: str
     childrens: list[Link]
 
 
 menu_items: list[Link] = [
     {
-        'name': 'link-1',
+        'name': 'home',
+        'to': '',
         'childrens': [
             {
-                'name': 'link-1-1',
+                'name': 'colors',
+                'to': 'colors',
                 'childrens': [
                     {
-                        'name': 'link-1-1-1',
+                        'name': 'red',
+                        'to': 'red',
                         'childrens': [
                             {
-                                'name': 'link-1-1-1-1',
+                                'name': 'dark',
+                                'to': 'dark',
                                 'childrens': [],
                             },
                             {
-                                'name': 'link-1-1-1-2',
+                                'name': 'light',
+                                'to': 'light',
                                 'childrens': [],
                             },
                         ],
                     },
                     {
-                        'name': 'link-1-1-2',
+                        'name': 'blue',
+                        'to': 'blue',
                         'childrens': [],
                     },
                 ],
             },
             {
-                'name': 'link-1-2',
+                'name': 'cars',
+                'to': 'cars',
                 'childrens': [
                     {
-                        'name': 'link-1-2-1',
+                        'name': 'sport',
+                        'to': 'sport',
                         'childrens': [],
                     },
                     {
-                        'name': 'link-1-2-2',
+                        'name': 'classic',
+                        'to': 'classic',
                         'childrens': [],
                     },
                 ],
@@ -54,30 +64,37 @@ menu_items: list[Link] = [
         ],
     },
     {
-        'name': 'link-2',
+        'name': 'about',
+        'to': 'about',
         'childrens': [
             {
-                'name': 'link-2-1',
+                'name': 'our-site',
+                'to': 'our-site',
                 'childrens': [
                     {
-                        'name': 'link-2-1-1',
+                        'name': 'call-center',
+                        'to': 'call-center',
                         'childrens': [],
                     },
                     {
-                        'name': 'link-2-1-2',
+                        'name': 'chat',
+                        'to': 'chat',
                         'childrens': [],
                     },
                 ],
             },
             {
-                'name': 'link-2-2',
+                'name': 'socials',
+                'to': 'socials',
                 'childrens': [
                     {
-                        'name': 'link-2-2-1',
+                        'name': 'vk',
+                        'to': 'vk',
                         'childrens': [],
                     },
                     {
-                        'name': 'link-2-2-2',
+                        'name': 'telegram',
+                        'to': 'telegram',
                         'childrens': [],
                     },
                 ],
@@ -85,7 +102,8 @@ menu_items: list[Link] = [
         ],
     },
     {
-        'name': 'link-3',
+        'name': 'feedback',
+        'to': 'feedback',
         'childrens': [],
     },
 ]

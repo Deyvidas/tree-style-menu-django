@@ -19,16 +19,30 @@ html {
 .LinkGroup {
     display: flex;
     flex-direction: column;
+    row-gap: 0.2em;
     padding-left: 2em;
+    border-left: 1px solid black;
 }
 
 .Link {
     display: flex;
-    column-gap: 0.3em;
+    max-width: 10em;
+    column-gap: 0.5em;
+    justify-content: space-between;
 }
 
 .LinkText {
+    color: black;
     line-height: var(--line-height);
+    transition: color 0.2s ease-in;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        text-decoration-line: underline;
+        text-decoration-color: #ffda72;
+    }
 }
 
 .LinkToggler {

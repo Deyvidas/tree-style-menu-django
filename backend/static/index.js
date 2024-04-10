@@ -17,9 +17,11 @@ function handleClick(event, link) {
     parent.toggleAttribute('data-open');
 
     if (isOpen) {
+        event.target.innerText = '+';
         parent.innerHTML = '';
         parent.appendChild(target);
     } else {
+        event.target.innerText = '-';
         renderLinks(link.childrens, parent);
     }
 }
@@ -28,9 +30,12 @@ function renderLinks(links, target) {
     links.forEach((link) => {
         const LinkGroup = getWebElement('ul', '', 'LinkGroup');
         const Link = getWebElement('li', '', 'Link');
-        const LinkText = getWebElement('span', '', 'LinkText');
+        const LinkText = getWebElement('a', '', 'LinkText');
         const LinkToggler = getWebElement('button', '+', 'LinkToggler');
 
+        const RootTo = target.querySelector('.LinkText')?.getAttribute('href');
+        const href = RootTo ? `${RootTo}${link.to}/` : `${link.to}/`;
+        LinkText.setAttribute('href', href);
         LinkText.textContent = link.name;
         Link.appendChild(LinkText);
 
