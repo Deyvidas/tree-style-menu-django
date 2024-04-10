@@ -1,0 +1,47 @@
+:root {
+    --font-size: 20px;
+    --line-height: 1.2em;
+}
+
+html {
+    font-size: var(--font-size);
+    font-family: 'Reddit Mono', monospace;
+}
+
+.NavLinks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    padding: 0.5em;
+    margin-left: -2em;
+}
+
+.LinkGroup {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+}
+
+.Link {
+    display: flex;
+    column-gap: 0.3em;
+}
+
+.LinkText {
+    line-height: var(--line-height);
+}
+
+.LinkToggler {
+    display: flex;
+    line-height: var(--line-height);
+    padding-inline: 0.5em;
+
+    background-color: #ffe7a6;
+    border-radius: 0.2em;
+
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #ffda72;
+    }
+}
