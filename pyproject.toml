@@ -11,6 +11,7 @@ python = "^3.12"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.3.0"
+django-debug-toolbar = "^4.3.0"
 
 
 [tool.poetry.group.prod.dependencies]

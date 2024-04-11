@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Self
+
 from django.db import models
 from django.db.models.signals import pre_save
 from slugify import slugify
@@ -27,6 +29,16 @@ class Menu(models.Model):
         on_delete=models.CASCADE,
     )
 
+    childrens: models.Manager[Self]
+
+    @property
+    def with_childrens(self):
+        return {
+            'name': self.name,
+            'href': self.href,
+            'childrens': [c.with_childrens for c in self.childrens.all()],
+        }
+
     class Meta:
         verbose_name = 'Меню'
         verbose_name_plural = 'Меню'
@@ -41,10 +53,8 @@ class Menu(models.Model):
 
 
 def menu_pre_save(instance: Menu, *args, **kwargs):
-    if instance.href:
-        return None
-
-    instance.href = slugify(instance.name, max_length=HREF_MAX_LENGTH)
+    if not instance.href:
+        instance.href = slugify(instance.name, max_length=HREF_MAX_LENGTH)
 
 
 pre_save.connect(receiver=menu_pre_save, sender=Menu)
