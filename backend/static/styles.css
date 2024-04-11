@@ -26,7 +26,8 @@ html {
 
 .Link {
     display: flex;
-    max-width: 10em;
+    flex-direction: row-reverse;
+    max-width: fit-content;
     column-gap: 0.5em;
     justify-content: space-between;
 }
@@ -34,6 +35,7 @@ html {
 .LinkText {
     color: black;
     line-height: var(--line-height);
+    white-space: nowrap;
     transition: color 0.2s ease-in;
     overflow: hidden;
     text-overflow: ellipsis;

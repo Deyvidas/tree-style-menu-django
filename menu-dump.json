@@ -1,0 +1,650 @@
+[
+{
+  "model": "menu.menu",
+  "pk": 19,
+  "fields": {
+    "name": "Главная",
+    "href": "",
+    "parent": null
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 20,
+  "fields": {
+    "name": "Авто",
+    "href": "auto",
+    "parent": 19
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 21,
+  "fields": {
+    "name": "Недвижимость",
+    "href": "real-estate",
+    "parent": 19
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 22,
+  "fields": {
+    "name": "Одежда",
+    "href": "cloth",
+    "parent": 19
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 23,
+  "fields": {
+    "name": "Электроника",
+    "href": "electronics",
+    "parent": 19
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 24,
+  "fields": {
+    "name": "Легковые авто",
+    "href": "passenger-cars",
+    "parent": 20
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 25,
+  "fields": {
+    "name": "Грузовики и спецтехника",
+    "href": "trucks-n-special-equipment",
+    "parent": 20
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 26,
+  "fields": {
+    "name": "Мото-техника",
+    "href": "motorcycle-equipment",
+    "parent": 20
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 27,
+  "fields": {
+    "name": "Водный транспорт",
+    "href": "water-transport",
+    "parent": 20
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 28,
+  "fields": {
+    "name": "Запчасти",
+    "href": "spare-parts",
+    "parent": 20
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 29,
+  "fields": {
+    "name": "Квартира",
+    "href": "apartment",
+    "parent": 21
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 30,
+  "fields": {
+    "name": "Комната",
+    "href": "room",
+    "parent": 21
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 31,
+  "fields": {
+    "name": "Дом, дача, коттедж",
+    "href": "house-cottage",
+    "parent": 21
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 32,
+  "fields": {
+    "name": "Земельный участок",
+    "href": "plot-of-land",
+    "parent": 21
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 33,
+  "fields": {
+    "name": "Гараж и машиноместо",
+    "href": "garage-n-car-space",
+    "parent": 21
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 34,
+  "fields": {
+    "name": "Коммерческая недвижимость",
+    "href": "commercial-property",
+    "parent": 21
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 35,
+  "fields": {
+    "name": "Женская одежда",
+    "href": "womens-wear",
+    "parent": 22
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 36,
+  "fields": {
+    "name": "Женская обувь",
+    "href": "womens-shoes",
+    "parent": 22
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 37,
+  "fields": {
+    "name": "Мужская одежда",
+    "href": "mens-wear",
+    "parent": 22
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 38,
+  "fields": {
+    "name": "Мужская обувь",
+    "href": "mens-shoes",
+    "parent": 22
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 39,
+  "fields": {
+    "name": "Детская одежда и обувь",
+    "href": "baby-clothes-n-shoes",
+    "parent": 22
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 40,
+  "fields": {
+    "name": "Платья",
+    "href": "dress",
+    "parent": 22
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 41,
+  "fields": {
+    "name": "Мужские футболки",
+    "href": "man-t-shirts",
+    "parent": 22
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 42,
+  "fields": {
+    "name": "Часы",
+    "href": "clock",
+    "parent": 22
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 43,
+  "fields": {
+    "name": "Ювелирные изделия",
+    "href": "jewelry",
+    "parent": 22
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 44,
+  "fields": {
+    "name": "Телефоны",
+    "href": "telefony",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 45,
+  "fields": {
+    "name": "Бытовая техника",
+    "href": "bytovaia-tekhnika",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 46,
+  "fields": {
+    "name": "Ноутбуки",
+    "href": "noutbuki",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 47,
+  "fields": {
+    "name": "Настольные компьютеры",
+    "href": "nastolnye-kompiutery",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 48,
+  "fields": {
+    "name": "Телевизоры",
+    "href": "televizory",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 49,
+  "fields": {
+    "name": "Колонки",
+    "href": "kolonki",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 50,
+  "fields": {
+    "name": "Комплектующие для ПК",
+    "href": "komplektuiushchie-dlia-pk",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 51,
+  "fields": {
+    "name": "Планшеты",
+    "href": "planshety",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 52,
+  "fields": {
+    "name": "Игровые приставки",
+    "href": "igrovye-pristavki",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 53,
+  "fields": {
+    "name": "Наушники",
+    "href": "naushniki",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 54,
+  "fields": {
+    "name": "Музыкальные центры",
+    "href": "muzykalnye-tsentry",
+    "parent": 23
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 55,
+  "fields": {
+    "name": "Audi",
+    "href": "audi",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 56,
+  "fields": {
+    "name": "BMW",
+    "href": "bmw",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 57,
+  "fields": {
+    "name": "Changan",
+    "href": "changan",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 58,
+  "fields": {
+    "name": "Chery",
+    "href": "chery",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 59,
+  "fields": {
+    "name": "Chevrolet",
+    "href": "chevrolet",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 60,
+  "fields": {
+    "name": "Daewoo",
+    "href": "daewoo",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 61,
+  "fields": {
+    "name": "EXEED",
+    "href": "exeed",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 62,
+  "fields": {
+    "name": "Ford",
+    "href": "ford",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 63,
+  "fields": {
+    "name": "Geely",
+    "href": "geely",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 64,
+  "fields": {
+    "name": "Haval",
+    "href": "haval",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 65,
+  "fields": {
+    "name": "Honda",
+    "href": "honda",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 66,
+  "fields": {
+    "name": "Hyundai",
+    "href": "hyundai",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 67,
+  "fields": {
+    "name": "Kia",
+    "href": "kia",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 68,
+  "fields": {
+    "name": "Lexus",
+    "href": "lexus",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 69,
+  "fields": {
+    "name": "Mazda",
+    "href": "mazda",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 70,
+  "fields": {
+    "name": "Mercedes",
+    "href": "mercedes",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 71,
+  "fields": {
+    "name": "Mitsubishi",
+    "href": "mitsubishi",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 72,
+  "fields": {
+    "name": "Nissan",
+    "href": "nissan",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 73,
+  "fields": {
+    "name": "Opel",
+    "href": "opel",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 74,
+  "fields": {
+    "name": "Peugeot",
+    "href": "peugeot",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 75,
+  "fields": {
+    "name": "Renault",
+    "href": "renault",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 76,
+  "fields": {
+    "name": "Skoda",
+    "href": "skoda",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 77,
+  "fields": {
+    "name": "Toyota",
+    "href": "toyota",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 78,
+  "fields": {
+    "name": "Volkswagen",
+    "href": "volkswagen",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 79,
+  "fields": {
+    "name": "ВАЗ",
+    "href": "vaz",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 80,
+  "fields": {
+    "name": "ГАЗ",
+    "href": "gaz",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 81,
+  "fields": {
+    "name": "УАЗ",
+    "href": "uaz",
+    "parent": 24
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 82,
+  "fields": {
+    "name": "Грузовики",
+    "href": "gruzoviki",
+    "parent": 25
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 83,
+  "fields": {
+    "name": "Сельхозтехника",
+    "href": "selkhoztekhnika",
+    "parent": 25
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 84,
+  "fields": {
+    "name": "Тягачи",
+    "href": "tiagachi",
+    "parent": 25
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 85,
+  "fields": {
+    "name": "Полуприцепы",
+    "href": "polupritsepy",
+    "parent": 25
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 86,
+  "fields": {
+    "name": "Экскаваторы",
+    "href": "ekskavatory",
+    "parent": 25
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 87,
+  "fields": {
+    "name": "Вёсельные лодки",
+    "href": "veselnye-lodki",
+    "parent": 27
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 88,
+  "fields": {
+    "name": "Гидроциклы",
+    "href": "gidrotsikly",
+    "parent": 27
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 89,
+  "fields": {
+    "name": "Катера и яхты",
+    "href": "katera-i-iakhty",
+    "parent": 27
+  }
+},
+{
+  "model": "menu.menu",
+  "pk": 90,
+  "fields": {
+    "name": "Моторные лодки и моторы",
+    "href": "motornye-lodki-i-motory",
+    "parent": 27
+  }
+}
+]

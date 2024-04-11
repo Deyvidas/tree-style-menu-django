@@ -34,7 +34,7 @@ function renderLinks(links, target) {
         const LinkToggler = getWebElement('button', '+', 'LinkToggler');
 
         const RootTo = target.querySelector('.LinkText')?.getAttribute('href');
-        const href = RootTo ? `${RootTo}${link.to}/` : `${link.to}/`;
+        const href = RootTo ? `${RootTo}${link.href}/` : `${link.href}/`;
         LinkText.setAttribute('href', href);
         LinkText.textContent = link.name;
         Link.appendChild(LinkText);
