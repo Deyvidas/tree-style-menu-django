@@ -22,7 +22,7 @@ function handleClick(event, link) {
         parent.appendChild(target);
     } else {
         event.target.innerText = '-';
-        renderLinks(link.childrens, parent);
+        renderLinks(link.childs, parent);
     }
 }
 
@@ -39,7 +39,7 @@ function renderLinks(links, target) {
         LinkText.textContent = link.name;
         Link.appendChild(LinkText);
 
-        if (link.childrens.length !== 0) {
+        if (link.childs.length !== 0) {
             LinkToggler.addEventListener('click', (event) => handleClick(event, link));
             Link.appendChild(LinkToggler);
         }

@@ -11,6 +11,7 @@
             "args": [
                 "runserver"
             ],
+            "justMyCode": false,
             "django": true,
             "autoStartBrowser": false,
             "program": "${workspaceFolder}/backend/manage.py"
