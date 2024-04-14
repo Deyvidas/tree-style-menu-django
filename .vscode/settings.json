@@ -1,9 +1,19 @@
 {
   "python.analysis.typeCheckingMode": "basic",
+
   "cSpell.words": [
     "childrens",
     "childs",
     "gruzoviki",
     "stylesheet"
-  ]
+  ],
+
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.ts",
+        "cmd": "tsc ${file} --module es2022 --outDir ${workspaceFolder}/backend/static/js/"
+      }
+    ]
+  }
 }

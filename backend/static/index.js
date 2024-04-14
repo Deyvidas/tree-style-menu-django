@@ -1,1 +1,1 @@
-export { renderMenu } from './js/menu/index.js';
+export { renderMenu } from './js/menu/renderMenu.js';
