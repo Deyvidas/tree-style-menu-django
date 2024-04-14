@@ -19,9 +19,6 @@ CACHE_TIMEOUT_SEC = 60 * 5
 MENU_QS_CACHE_KEY = 'menu_qs'
 
 
-type TQS = models.QuerySet[Menu]
-
-
 class TMenuGetterKwargs(TypedDict):
     id: NotRequired[int]
     name: NotRequired[str]
@@ -37,8 +34,8 @@ class TMenuItem(TMenuGetterKwargs):
     childs: Required[list[TMenuItem]]
 
 
-class MenuManger(models.Manager):
-    def get_queryset(self) -> TQS:
+class MenuManager(models.Manager['Menu']):
+    def get_queryset(self):
         return self.get_cached_menu()
 
     def with_childrens(
@@ -73,13 +70,13 @@ class MenuManger(models.Manager):
         parent['childs'] = [self._get_tree(menu, id=c['id']) for c in childs]
         return parent
 
-    def get_cached_menu(self) -> TQS:
-        query_set: TQS | None = cache.get(MENU_QS_CACHE_KEY)
+    def get_cached_menu(self):
+        query_set: models.QuerySet[Menu] | None = cache.get(MENU_QS_CACHE_KEY)
         if query_set is None:
             query_set = self.actualize_cached_menu()
         return query_set
 
-    def actualize_cached_menu(self) -> TQS:
+    def actualize_cached_menu(self):
         new_query_set = super().get_queryset()
         cache.set(MENU_QS_CACHE_KEY, new_query_set, CACHE_TIMEOUT_SEC)
         return new_query_set

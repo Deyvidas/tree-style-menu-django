@@ -1,19 +1,26 @@
 {
-  "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.typeCheckingMode": "basic",
 
-  "cSpell.words": [
-    "childrens",
-    "childs",
-    "gruzoviki",
-    "stylesheet"
-  ],
+    "cSpell.words": [
+        "childrens",
+        "childs",
+        "glavnaia",
+        "gruzoviki",
+        "ssylka",
+        "stylesheet"
+    ],
 
-  "emeraldwalk.runonsave": {
-    "commands": [
-      {
-        "match": "\\.ts",
-        "cmd": "tsc ${file} --module es2022 --outDir ${workspaceFolder}/backend/static/js/"
-      }
-    ]
-  }
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.ts",
+                "cmd": "tsc ${file} --module es2022 --outDir ${workspaceFolder}/backend/static/js/"
+            }
+        ]
+    },
+    "python.testing.pytestArgs": [
+        "backend"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
