@@ -1,11 +1,11 @@
 {% extends "index.html" %}
+{% load menu_tags %}
 
 {% block title %}
 Sub menu
 {% endblock title %}
 
 {% block submenu %}
-<script>
-    const links = {{ menu_items|safe }}
-</script>
+    {% render_menu 'Авто' %}
+    {% render_menu 'Электроника' %}
 {% endblock submenu %}

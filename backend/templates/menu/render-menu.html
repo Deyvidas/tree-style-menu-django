@@ -1,0 +1,8 @@
+{% load static %}
+
+<div id={{menu_id}} class='NavLinks'>
+    <script type='module'>
+        import { renderMenu } from '{% static 'index.js' %}'
+        renderMenu({{menu_tree|safe}}, '{{menu_id|safe}}')
+    </script>
+</div>
